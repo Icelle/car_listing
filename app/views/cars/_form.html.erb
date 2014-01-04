@@ -1,0 +1,7 @@
+<%= simple_form_for @car do |f| %>
+  <%= f.input :color %>
+  <%= f.input :year, as: :integer, :hint => "Must be after 1980." %>
+  <%= f.input :mileage, :hint => "Must be a number." %>
+  <%= f.input :description, as: :text%>
+  <%= f.button :submit %>
+<% end %>
